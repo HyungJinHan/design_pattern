@@ -12,7 +12,7 @@
 
 - [싱글턴](./CreationalPattern/Singleton/README.md)
 - [추상 팩토리](./CreationalPattern/AbstractFactory/README.md)
-- [팩토리 메소드]()
+- [팩토리 메소드](./CreationalPattern/FactoryMethod/README.md)
 - 빌더
 - 프로토타입
 
@@ -20,7 +20,7 @@
 
 > 클래스와 객체들이 상호작용하는 방법과 역할을 분담하는 방법을 다루는 패턴
 
-- 템플릿 메소드
+- [템플릿 메소드](./BehavioralPattern/TemplateMethod/README.md)
 - [싱글턴](./BehavioralPattern/Singleton/README.md)
 - 반복자
 - [옵저버](./BehavioralPattern/Observer/README.md)
