@@ -1,3 +1,15 @@
+/**
+ *
+ * @param {number} price
+ * @returns
+ */
+const pricMaker = (price) => {
+  const commaPrice = price
+    .toString()
+    .replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+  return `${commaPrice}₩`;
+};
+
 class FriedChicken {
   constructor() {
     const price = 18000;
@@ -5,17 +17,15 @@ class FriedChicken {
     const favorite = "⭐️⭐️⭐️⭐️";
 
     this.price = () => {
-      console.log(
-        `가격 : ${price
-          .toString()
-          .replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",")}`
-      );
+      console.log("-------------------------");
+      console.log(`가격 : ${pricMaker(price)}`);
     };
     this.taste = () => {
       console.log(`맛 : ${taste}`);
     };
     this.favorite = () => {
       console.log(`인기도 : ${favorite}`);
+      console.log("-------------------------");
     };
   }
 }
@@ -27,17 +37,15 @@ class SeasonedSpicyChicken {
     const favorite = "⭐️⭐️⭐️";
 
     this.price = () => {
-      console.log(
-        `가격 : ${price
-          .toString()
-          .replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",")}`
-      );
+      console.log("-------------------------");
+      console.log(`가격 : ${pricMaker(price)}`);
     };
     this.taste = () => {
       console.log(`맛 : ${taste}`);
     };
     this.favorite = () => {
       console.log(`인기도 : ${favorite}`);
+      console.log("-------------------------");
     };
   }
 }
@@ -49,17 +57,15 @@ class HoneycomboChicken {
     const favorite = "⭐️⭐️⭐️⭐️⭐️";
 
     this.price = () => {
-      console.log(
-        `가격 : ${price
-          .toString()
-          .replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",")}`
-      );
+      console.log("-------------------------");
+      console.log(`가격 : ${pricMaker(price)}`);
     };
     this.taste = () => {
       console.log(`맛 : ${taste}`);
     };
     this.favorite = () => {
       console.log(`인기도 : ${favorite}`);
+      console.log("-------------------------");
     };
   }
 }
