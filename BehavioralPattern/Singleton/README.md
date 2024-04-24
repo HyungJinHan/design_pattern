@@ -12,5 +12,5 @@
 ### 패턴 이미지
 
 <div align="center">
-  <img src="../image/singleton.png">
+  <img src="../../image/singleton.png">
 </div>

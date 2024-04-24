@@ -1,4 +1,4 @@
-## Abstract Character Factory Pattern
+## Abstract Factory Pattern
 
 ### 개념
 
@@ -11,5 +11,5 @@
 ### 패턴 이미지
 
 <div align="center">
-  <img src="../image/abstract_character_factory.png">
+  <img src="../../image/abstract_factory.png">
 </div>

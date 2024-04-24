@@ -10,9 +10,9 @@
 
 > 객체 인스턴스를 생성하는 패턴으로, 클라이언트와 그 클라이언트가 생성해야 하는 객체 인스턴스 사이의 연결을 끊어주는 패턴
 
-- [싱글턴](./Singleton/README.md)
-- [추상 팩토리](./AbstractCharacterFactory//README.md)
-- 팩토리 메소드
+- [싱글턴](./CreationalPattern/Singleton/README.md)
+- [추상 팩토리](./CreationalPattern/AbstractFactory/README.md)
+- [팩토리 메소드]()
 - 빌더
 - 프로토타입
 
@@ -21,9 +21,9 @@
 > 클래스와 객체들이 상호작용하는 방법과 역할을 분담하는 방법을 다루는 패턴
 
 - 템플릿 메소드
-- [싱글턴](./Singleton/README.md)
+- [싱글턴](./BehavioralPattern/Singleton/README.md)
 - 반복자
-- [옵저버](./Observer/README.md)
+- [옵저버](./BehavioralPattern/Observer/README.md)
 - 상태
 - 전략
 - 인터프리터

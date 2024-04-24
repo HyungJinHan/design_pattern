@@ -11,5 +11,5 @@
 ### 패턴 이미지
 
 <div align="center">
-  <img src="../image/observer.png">
+  <img src="../../image/observer.png">
 </div>
