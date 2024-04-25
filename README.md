@@ -15,7 +15,7 @@
 - [싱글턴](./CreationalPattern/Singleton/README.md)
 - [추상 팩토리](./CreationalPattern/AbstractFactory/README.md)
 - [팩토리 메소드](./CreationalPattern/FactoryMethod/README.md)
-- 빌더
+- [빌더](./CreationalPattern/Builder/README.md)
 - 프로토타입
 
 ### 행동 패턴
@@ -39,7 +39,7 @@
 > 클래스와 객체를 더 큰 구조로 만들 수 있게 구성을 사용하는 패턴
 
 - 데코레이터
-- 컴포지트
+- 복합체 (컴포지트)
 - 프록시
 - 퍼사드
 - 어댑터
