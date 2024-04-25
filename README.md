@@ -16,7 +16,7 @@
 - [추상 팩토리](./CreationalPattern/AbstractFactory/README.md)
 - [팩토리 메소드](./CreationalPattern/FactoryMethod/README.md)
 - [빌더](./CreationalPattern/Builder/README.md)
-- 프로토타입
+- [프로토타입](./CreationalPattern/Prototype/README.md)
 
 ### 행동 패턴
 
