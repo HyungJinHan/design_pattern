@@ -3,6 +3,8 @@
 > [한글 설명 참고사이트](https://m.hanbit.co.kr/channel/category/category_view.html?cms_code=CMS8616098823)
 >
 > [JS 버전 디자인 패턴 GitHub](https://github.com/fbeline/design-patterns-JS)
+>
+> [Refactoring GURU](https://refactoring.guru/ko/design-patterns)
 
 ## 디자인 패턴 용도에 따른 분리
 
@@ -24,7 +26,7 @@
 - [싱글턴](./BehavioralPattern/Singleton/README.md)
 - 반복자
 - [옵저버](./BehavioralPattern/Observer/README.md)
-- 상태
+- [상태](./BehavioralPattern/State/README.md)
 - 전략
 - 인터프리터
 - 역할 변경
