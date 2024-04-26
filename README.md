@@ -24,7 +24,7 @@
 
 - [템플릿 메소드](./BehavioralPattern/TemplateMethod/README.md)
 - [싱글턴](./BehavioralPattern/Singleton/README.md)
-- 반복자
+- [반복자](./BehavioralPattern/Iterator/README.md)
 - [옵저버](./BehavioralPattern/Observer/README.md)
 - [상태](./BehavioralPattern/State/README.md)
 - 전략
