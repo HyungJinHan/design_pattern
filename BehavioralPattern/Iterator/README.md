@@ -33,4 +33,5 @@
   - `Iterator` 역할을 만드는 인터페이스를 결정
 
 - `ConcreteAggregate` (구체적인 집합체)
+
   - `Aggregate` 역할이 결정한 인터페이스를 실제로 구현

@@ -27,7 +27,7 @@
 - [반복자](./BehavioralPattern/Iterator/README.md)
 - [옵저버](./BehavioralPattern/Observer/README.md)
 - [상태](./BehavioralPattern/State/README.md)
-- 전략
+- [전략](./BehavioralPattern/Strategy/README.md)
 - 인터프리터
 - 역할 변경
 - 비지터
