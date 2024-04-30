@@ -36,7 +36,7 @@ class AdvanedCharacter extends MergedCharacter {
     this.advancedAttack();
   }
 
-  private advancedAttack(): void {
+  private advancedAttack() {
     console.info("advanced attack");
   }
 }
