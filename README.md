@@ -28,8 +28,8 @@
 - [옵저버](./BehavioralPattern/Observer/README.md)
 - [상태](./BehavioralPattern/State/README.md)
 - [전략](./BehavioralPattern/Strategy/README.md)
-- [인터프리터](./BehavioralPattern/Interpreter/README.md)
-- 역할 변경
+- [인터프리터](./BehavioralPattern/Interpreter/README.md) -> 이해 X
+- [책임 연쇄 (Chain of Responsibility)](./BehavioralPattern/ChainOfResponsibility/README.md)
 - 비지터
 - 중재자
 - 메멘토
