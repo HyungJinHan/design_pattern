@@ -28,7 +28,7 @@
 - [옵저버](./BehavioralPattern/Observer/README.md)
 - [상태](./BehavioralPattern/State/README.md)
 - [전략](./BehavioralPattern/Strategy/README.md)
-- 인터프리터
+- [인터프리터](./BehavioralPattern/Interpreter/README.md)
 - 역할 변경
 - 비지터
 - 중재자
