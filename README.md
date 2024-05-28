@@ -24,13 +24,13 @@
 
 - [템플릿 메소드](./BehavioralPattern/TemplateMethod/README.md)
 - [싱글턴](./BehavioralPattern/Singleton/README.md)
-- [반복자](./BehavioralPattern/Iterator/README.md)
+- [반복자 (Iterator)](./BehavioralPattern/Iterator/README.md)
 - [옵저버](./BehavioralPattern/Observer/README.md)
-- [상태](./BehavioralPattern/State/README.md)
-- [전략](./BehavioralPattern/Strategy/README.md)
+- [상태 (State)](./BehavioralPattern/State/README.md)
+- [전략 (Strategy)](./BehavioralPattern/Strategy/README.md)
 - [인터프리터](./BehavioralPattern/Interpreter/README.md) -> 이해 X
 - [책임 연쇄 (Chain of Responsibility)](./BehavioralPattern/ChainOfResponsibility/README.md)
-- 비지터
+- [비지터 (Visitor)](./BehavioralPattern/Visitor/README.md)
 - 중재자
 - 메멘토
 
