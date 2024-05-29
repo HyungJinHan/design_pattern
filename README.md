@@ -31,7 +31,7 @@
 - [인터프리터](./BehavioralPattern/Interpreter/README.md) -> 이해 X
 - [책임 연쇄 (Chain of Responsibility)](./BehavioralPattern/ChainOfResponsibility/README.md)
 - [비지터 (Visitor)](./BehavioralPattern/Visitor/README.md)
-- 중재자
+- [중재자 (Mediator)]()
 - 메멘토
 
 ### 구조 패턴
