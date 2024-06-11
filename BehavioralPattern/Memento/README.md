@@ -2,6 +2,10 @@
 
 ## Memento Pattern
 
+### 배포된 예제 사이트
+
+- [memento-example 사이트](https://memento-example.vercel.app/)
+
 ### 개념
 
 - 객체의 상태 정보를 가지는 클래스를 따로 생성하여 객체의 상태를 저장하거나, 이전 상태로 복원할 수 있게 해주는 패턴
