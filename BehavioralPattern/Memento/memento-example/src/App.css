@@ -77,3 +77,9 @@
   line-height: 1;
   margin: 0;
 }
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 206);
+  margin-top: 20px;
+}

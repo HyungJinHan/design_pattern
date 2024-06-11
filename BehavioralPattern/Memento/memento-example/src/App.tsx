@@ -49,6 +49,13 @@ const App = () => {
         />
         <button className="button" children="롤백" onClick={() => rollback()} />
       </div>
+
+      <a
+        href="https://github.com/HyungJinHan/design_pattern/tree/main/BehavioralPattern/Memento/memento-example"
+        target="_blank"
+        rel="noreferrer"
+        children="GitHub로 이동"
+      />
     </div>
   );
 };
