@@ -75,7 +75,37 @@ class CareTaker {
     if (!this.mementos.length) return;
     const memento = this.mementos.pop();
 
-    console.log(`CareTaker: Restoring state to: ${memento.getName()}`);
+    console.log(`CareTaker: Restoring state to: ${memento?.getName()}`);
     this.originator.restore(memento);
   }
+
+  public showHistory(): void {
+    console.log("CareTaker: Here's the list of mementos:");
+
+    for (const memento of this.mementos) {
+      console.log(memento.getName());
+    }
+  }
 }
+
+/** Client Code */
+const originator = new Originator("Super-duper-super-puper-super.");
+const caretaker = new CareTaker(originator);
+
+caretaker.backup();
+originator.doSomething();
+
+caretaker.backup();
+originator.doSomething();
+
+caretaker.backup();
+originator.doSomething();
+
+console.log("");
+caretaker.showHistory();
+
+console.log("\nClient: Now, let's rollback!\n");
+caretaker.undo();
+
+console.log("\nClient: Once more!\n");
+caretaker.undo();
