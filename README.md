@@ -39,7 +39,7 @@
 > 클래스와 객체를 더 큰 구조로 만들 수 있게 구성을 사용하는 패턴
 
 - [데코레이터](./StructuralPattern/Decorator/README.md)
-- 복합체 (컴포지트)
+- [복합체 (컴포지트)](./StructuralPattern/Composite/README.md)
 - 프록시
 - 퍼사드
 - 어댑터
