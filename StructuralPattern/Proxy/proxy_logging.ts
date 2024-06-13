@@ -7,9 +7,15 @@ class Proxy implements ISubject {
     this.subject = subject;
   }
 
+  Proxy(subject: RealSubject) {
+    this.subject = subject;
+  }
+
   action(): void {
+    console.log("로깅...............");
     this.subject.action(); // 위임
-    console.log("프록시 객체 액션 (Normal Proxy)");
+    console.log("프록시 객체 액션 (Logging Proxy)");
+    console.log("로깅...............");
   }
 }
 
@@ -20,8 +26,10 @@ class Client {
   }
 }
 
-const client_code = new Client();
-client_code.main();
+const client_true = new Client();
+client_true.main();
 
+// 로깅...............
 // 원본 객체 액션
-// 프록시 객체 액션
+// 프록시 객체 액션 (Logging Proxy)
+// 로깅...............
