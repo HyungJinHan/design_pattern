@@ -14,7 +14,7 @@
 
 - 굳이 이런 번거로운 방식을 취하는 이유는 대상 클래스가 민감한 정보를 가지고 있거나 인스턴스화 하기에 무겁거나 추가 기능을 가미하고 싶은데 <b><u>원본 객체를 수정할 수 없는 상황일 때를 극복</u></b>하기 위해서 사용
 
-### 프록시 패턴의 특징
+### 패턴 특징
 
 - 보안 (`Sercurity`)
 
@@ -46,4 +46,131 @@
   <img src="../../image/proxy.png">
 </div>
 
-### 프록시 패턴 종류
+- `Subject`
+
+  - `Proxy`와 `RealSubject`를 하나로 묶는 인터페이스 (다형성)
+
+  - 대상 객체와 프록시 역할을 동일하게 하는 추상 메소드 `operation()`를 정의
+
+  - 인터페이스가 있기 때문에 `Client`는 `Proxy` 역할과 `RealSubject` 역할의 차이를 의식할 필요가 없음
+
+- `RealSubject`
+
+  - 원본 대상 객체
+
+- `Proxy`
+
+  - `RealSubject`를 중계할 대리자 역할
+
+  - 프록시는 대상 객체(`RealSubject`)를 합성(`composition`)
+
+  - 프록시는 대상 객체(`RealSubject`)와 같은 이름의 메서드를 호출하며, 별도의 로직을 수행할 수 있음 (인터페이스 구현 메소드)
+
+  - 프록시는 흐름 제어만 할 뿐, 결과 값을 조작하거나 변경시키면 X
+
+- `Client`
+
+  - `Subject` 인터페이스를 이용하여 프록시 객체를 생성해 이용
+
+  - 클라이언트는 `Proxy`를 중간에 두고 `Proxy`를 통해서 `RealSubject`와 데이터를 주고 받음
+
+### 패턴 종류
+
+> `Proxy` 패턴은 단순하면서도 자주 쓰이는 패턴이며, 다양한 활용 방식이 존재
+>
+> 같은 `Proxy` 객체라도 어떠한 로직을 짜느냐에 따라 그 활용도는 천차만별
+>
+> `Proxy` 패턴의 기본형을 어떤 방식으로 변형하느냐에 따라 종류가 나뉘어짐
+>
+> 해당 목차의 예제는 Java 코드 기반의 예제를 TypeScript로 변경하여 코드를 작성함
+
+#### Default Interface & Class
+
+```TS
+  export interface ISubject {
+    action(): void;
+  }
+
+  export class RealSubject implements ISubject {
+    action(): void {
+      console.log("원본 객체 액션");
+    }
+  }
+```
+
+#### 기본형 프록시 (`Normal Proxy`)
+
+```TS
+  class ProxyNormal implements ISubject {
+    private subject: RealSubject; // 대상 객체를 composition
+
+    constructor(subject: RealSubject) {
+      this.subject = subject;
+    }
+
+    action(): void {
+      this.subject.action(); // 위임
+      console.log("프록시 객체 액션 (Normal Proxy)");
+    }
+  }
+
+  class Client {
+    public main(_args?: string[]): void {
+      const sub = new ProxyNormal(new RealSubject());
+      sub.action();
+    }
+  }
+
+  const client_code = new Client();
+  client_code.main();
+
+  // 원본 객체 액션
+  // 프록시 객체 액션
+```
+
+#### 가상 프록시 (`Virtual Proxy`)
+
+- 지연 초기화 방식
+
+- 가끔 필요하지만 항상 메모리에 적재되어 있는 무거운 서비스 객체가 있는 경우
+
+- 이 구현은 실제 객채의 생성에 많은 자원이 소모되지만 사용 빈도는 낮을 때 쓰는 방식
+
+- 서비스가 시작될 때 객체를 생성하는 대신에 개체 초기화가 실제로 필요한 시점에 초기화될 수 있도록 지연할 수 있음
+
+```TS
+  class ProxyVirtual implements ISubject {
+    private subject!: RealSubject;
+    // has no initializer and is not definitely assigned in the constructor 에러 방지
+
+    ProxyVirtual() {}
+
+    action(): void {
+      // 프록시 객체는 실제 요청(action(메소드 호출))이 들어 왔을 때 실제 객체를 생성한다.
+      if (!this.subject) {
+        this.subject = new RealSubject();
+      }
+
+      this.subject.action(); // 위임
+      console.log("프록시 객체 액션 (Virtual Proxy)");
+    }
+  }
+
+  class Client {
+    public main(_args?: string[]): void {
+      const sub = new ProxyVirtual();
+      sub.action();
+    }
+  }
+
+  const client_code = new Client();
+  client_code.main();
+```
+
+#### 보호 프록시 (`Protection Proxy`)
+
+#### 로깅 프록시 (`Logging Proxy`)
+
+#### 원격 프록시 (`Remote Proxy`)
+
+#### 캐싱 프록시 (`Caching Proxy`)
