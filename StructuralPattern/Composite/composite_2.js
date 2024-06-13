@@ -1,6 +1,7 @@
 function Interface_JS() {
   this.implements = function (obj) {
     let notImplementMethod = [];
+
     for (const method in this) {
       if (method !== "implements") {
         if (!Object.hasOwnProperty.call(obj.__proto__, method)) {
