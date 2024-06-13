@@ -41,7 +41,7 @@
 - [데코레이터](./StructuralPattern/Decorator/README.md)
 - [복합체 (컴포지트)](./StructuralPattern/Composite/README.md)
 - [프록시 ⭐️](./StructuralPattern/Proxy/README.md)
-- [퍼사드](./) -> 추가 예정
+- [퍼사드](./StructuralPattern/Facade/README.md)
 - [어댑터](./) -> 추가 예정
 - [브리지](./) -> 추가 예정
 - [플라이웨이트](./) -> 추가 예정

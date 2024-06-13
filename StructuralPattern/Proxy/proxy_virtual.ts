@@ -4,8 +4,6 @@ class Proxy implements ISubject {
   private subject!: RealSubject;
   // has no initializer and is not definitely assigned in the constructor 에러 방지
 
-  Proxy() {}
-
   action(): void {
     // 프록시 객체는 실제 요청(action(메소드 호출))이 들어 왔을 때 실제 객체를 생성한다.
     if (!this.subject) {

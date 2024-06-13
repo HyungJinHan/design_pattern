@@ -7,10 +7,6 @@ class Proxy implements ISubject {
     this.subject = subject;
   }
 
-  Proxy(subject: RealSubject) {
-    this.subject = subject;
-  }
-
   action(): void {
     console.log("로깅...............");
     this.subject.action(); // 위임

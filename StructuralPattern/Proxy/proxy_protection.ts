@@ -9,11 +9,6 @@ class Proxy implements ISubject {
     this.access = access;
   }
 
-  Proxy(subject: RealSubject, access: boolean) {
-    this.subject = subject;
-    this.access = access;
-  }
-
   action(): void {
     if (this.access) {
       this.subject.action(); // 위임
