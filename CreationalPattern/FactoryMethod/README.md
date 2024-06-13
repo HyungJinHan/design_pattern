@@ -14,7 +14,7 @@
 
 - 클라이언트 클래스는 팩토리 클래스에게 인스턴스를 생성하는 책임을 위임
 
-### 패턴 이미지
+### 패턴 구조
 
 <div align="center">
   <img src="../../image/factory_method_1.png">

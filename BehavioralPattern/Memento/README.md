@@ -12,7 +12,7 @@
 
 - 원하는 시점의 상태 복원이 가능
 
-### 패턴 이미지
+### 패턴 구조
 
 <div align="center">
   <img src="../../image/memento.png">

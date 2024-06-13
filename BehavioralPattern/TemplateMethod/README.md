@@ -8,7 +8,7 @@
 
 - 자식 클래스들이 전체 알고리즘의 구조를 변경하지 않고도 기본 알고리즘의 단계들을 오버라이드할 수 있도록 함
 
-### 패턴 이미지
+### 패턴 구조
 
 <div align="center">
   <img src="../../image/teamplate_method.png">

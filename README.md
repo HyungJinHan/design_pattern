@@ -28,7 +28,7 @@
 - [옵저버](./BehavioralPattern/Observer/README.md)
 - [상태 (State)](./BehavioralPattern/State/README.md)
 - [전략 (Strategy)](./BehavioralPattern/Strategy/README.md)
-- [인터프리터](./BehavioralPattern/Interpreter/README.md) -> 이해 X
+- [인터프리터](./BehavioralPattern/Interpreter/README.md)
 - [책임 연쇄 (Chain of Responsibility)](./BehavioralPattern/ChainOfResponsibility/README.md)
 - [비지터 (Visitor)](./BehavioralPattern/Visitor/README.md)
 - [중재자 (Mediator)](./BehavioralPattern/Mediator/README.md)
@@ -40,7 +40,7 @@
 
 - [데코레이터](./StructuralPattern/Decorator/README.md)
 - [복합체 (컴포지트)](./StructuralPattern/Composite/README.md)
-- [프록시](./) -> 추가 예정
+- [프록시 ⭐️](./StructuralPattern/Proxy/README.md)
 - [퍼사드](./) -> 추가 예정
 - [어댑터](./) -> 추가 예정
 - [브리지](./) -> 추가 예정

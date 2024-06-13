@@ -13,7 +13,7 @@
     <img src="../../image/builder_example.png">
   </div>
 
-### 패턴 이미지
+### 패턴 구조
 
 <div align="center">
   <img src="../../image/builder.png">

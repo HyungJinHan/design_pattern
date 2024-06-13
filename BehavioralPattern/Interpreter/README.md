@@ -20,7 +20,7 @@
 
 - 반복되는 문제 패턴을 언어 또는 문법으로 정의하고 확장할 수 있음
 
-### 패턴 이미지
+### 패턴 구조
 
 <div align="center">
   <img src="../../image/interpreter.png">

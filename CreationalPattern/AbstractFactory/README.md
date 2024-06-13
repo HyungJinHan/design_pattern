@@ -10,7 +10,7 @@
 
 - 즉, 추상 팩토리 패턴의 핵심은 **제품 "군" 집합**을 타입 별로 찍어낼 수 있다는 점이 포인트
 
-### 패턴 이미지
+### 패턴 구조
 
 <div align="center">
   <img src="../../image/abstract_factory.png">

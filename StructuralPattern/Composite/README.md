@@ -24,7 +24,7 @@
 
       - 즉, `Leaf`는 자식이 없음
 
-### 패턴 이미지
+### 패턴 구조
 
 <div align="center">
   <img src="../../image/composite.png">

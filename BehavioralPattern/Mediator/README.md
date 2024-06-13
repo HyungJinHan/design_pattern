@@ -16,7 +16,7 @@
 
   - 비행기 이착륙을 돕는 관제탑
 
-### 패턴 이미지
+### 패턴 구조
 
 <div align="center">
   <img src="../../image/mediator.png">

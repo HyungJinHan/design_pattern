@@ -14,7 +14,7 @@
 
 - 요청 처리 과정에서 각 객체가 책임을 나누어 처리할 수 있으므로, 코드 유지 보수성과 확장성을 높일 수 있음
 
-### 패턴 이미지
+### 패턴 구조
 
 <div align="center">
   <img src="../../image/chain_of_responsibility.png">
