@@ -46,4 +46,4 @@
 - [퍼사드](./StructuralPattern/Facade/README.md)
 - [어댑터](./StructuralPattern/Adapter/README.md)
 - [브릿지](./StructuralPattern/Bridge/README.md)
-- [경량 (Flyweight)](./)
+- [경량 (Flyweight)](./StructuralPattern/Flyweight/README.md)
