@@ -5,6 +5,8 @@
 > [JS 버전 디자인 패턴 GitHub](https://github.com/fbeline/design-patterns-JS)
 >
 > [Refactoring GURU](https://refactoring.guru/ko/design-patterns)
+>
+> [Inpa Dev Blog (디자인 패턴)](https://inpa.tistory.com/category/%EB%94%94%EC%9E%90%EC%9D%B8%20%ED%8C%A8%ED%84%B4)
 
 ## 디자인 패턴 용도에 따른 분리
 
@@ -43,5 +45,5 @@
 - [프록시 ⭐️](./StructuralPattern/Proxy/README.md)
 - [퍼사드](./StructuralPattern/Facade/README.md)
 - [어댑터](./StructuralPattern/Adapter/README.md)
-- [브리지](./) -> 추가 예정
-- [플라이웨이트](./) -> 추가 예정
+- [브릿지](./StructuralPattern/Bridge/README.md)
+- [경량 (Flyweight)](./)
