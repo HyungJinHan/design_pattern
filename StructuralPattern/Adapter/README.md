@@ -72,13 +72,13 @@
 
   // Client Interface
   // 클라이언트가 접근해서 사용할 고수준의 어댑터 모듈
-  interface Target {
+  interface TargetObject {
     method(data: number | string): void;
   }
 
   // Adapter
   // Adaptee 서비스를 클라이언트에서 사용하게 할 수 있도록 호환 처리 해주는 어댑터
-  class AdapterObject implements Target {
+  class AdapterObject implements TargetObject {
     adaptee: ServiceObject; // Composition으로 Service 객체를 클래스 필드로
 
     constructor(adaptee: ServiceObject) {
@@ -162,13 +162,13 @@
 
   // Client Interface
   // 클라이언트가 접근해서 사용할 고수준의 어댑터 모듈
-  interface Target {
+  interface TargetClass {
     method(data: number | string): void;
   }
 
   // Adapter
   // Adaptee 서비스를 클라이언트에서 사용하게 할 수 있도록 호환 처리 해주는 어댑터
-  class AdapterClass extends ServiceClass implements Target {
+  class AdapterClass extends ServiceClass implements TargetClass {
     // 어댑터의 메소드가 호출되면, 부모 클래스 Adaptee의 메소드 호출
     method(data: number | string): void {
       this.specificMethod(data);
