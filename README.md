@@ -34,7 +34,7 @@
 - [책임 연쇄 (Chain of Responsibility)](./BehavioralPattern/ChainOfResponsibility/README.md)
 - [비지터 (Visitor)](./BehavioralPattern/Visitor/README.md)
 - [중재자 (Mediator)](./BehavioralPattern/Mediator/README.md)
-- [메멘토](./BehavioralPattern/Memento/README.md)
+- [메멘토](./BehavioralPattern/Memento/README.md) -> 예제 사이트 有
 
 ### 구조 패턴
 
