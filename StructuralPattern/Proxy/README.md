@@ -42,9 +42,7 @@
 
 ### 패턴 구조
 
-<div align="center">
-  <img src="../../image/proxy.png">
-</div>
+![proxy](../../image/proxy.png)
 
 - `Subject`
 

@@ -10,9 +10,7 @@
 
 ### 패턴 구조
 
-<div align="center">
-  <img src="../../image/teamplate_method.png">
-</div>
+![teamplate_method](../../image/teamplate_method.png)
 
 - 자동차 회사에 대한 추상 클래스를 생성해서 공통으로 사용하는 `buildCar` 메서드를 정의
 

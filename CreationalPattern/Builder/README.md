@@ -9,12 +9,9 @@
 - 생성자에 들어갈 매개 변수를 메서드로 하나하나 받아들이고 마지막에 통합 빌드해서 객체를 생성하는 방식
 
 - 예를 들면 수제 햄버거와 같은 느낌
-  <div align="center">
-    <img src="../../image/builder_example.png">
-  </div>
+
+  ![builder_example](../../image/builder_example.png)
 
 ### 패턴 구조
 
-<div align="center">
-  <img src="../../image/builder.png">
-</div>
+![builder](../../image/builder.png)

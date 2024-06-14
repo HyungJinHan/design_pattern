@@ -12,6 +12,4 @@
 
 ### 패턴 구조
 
-<div align="center">
-  <img src="../../image/abstract_factory.png">
-</div>
+![abstract_factory](../../image/abstract_factory.png)

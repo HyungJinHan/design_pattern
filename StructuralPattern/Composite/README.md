@@ -14,7 +14,7 @@
 
   - 디렉토리 개념의 예시 이미지
 
-    <img src="../../image/composite_example.png">
+    ![composite_example](../../image/composite_example.png)
 
     - 폴더(디렉토리) 안에는 파일이 들어있을 수도 있고, 파일을 담은 또 다른 폴더도 들어있을 수 있음
 
@@ -26,9 +26,7 @@
 
 ### 패턴 구조
 
-<div align="center">
-  <img src="../../image/composite.png">
-</div>
+![composite](../../image/composite.png)
 
 - `Component`
 

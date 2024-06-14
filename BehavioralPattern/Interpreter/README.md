@@ -22,9 +22,7 @@
 
 ### 패턴 구조
 
-<div align="center">
-  <img src="../../image/interpreter.png">
-</div>
+![interpreter](../../image/interpreter.png)
 
 - `interpret`
 

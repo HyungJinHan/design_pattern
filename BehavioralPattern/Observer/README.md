@@ -12,6 +12,4 @@
 
 ### 패턴 구조
 
-<div align="center">
-  <img src="../../image/observer.png">
-</div>
+![observer](../../image/observer.png)

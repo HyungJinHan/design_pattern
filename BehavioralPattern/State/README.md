@@ -15,9 +15,7 @@
 
 ### 패턴 구조
 
-<div align="center">
-  <img src="../../image/state.png">
-</div>
+![state](../../image/state.png)
 
 - `State` 인터페이스
 

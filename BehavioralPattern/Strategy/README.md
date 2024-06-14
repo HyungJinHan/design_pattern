@@ -11,9 +11,7 @@
 
 ### 패턴 구조
 
-<div align="center">
-  <img src="../../image/strategy.png">
-</div>
+![strategy](../../image/strategy.png)
 
 - 전략 알고리즘 객체들
 

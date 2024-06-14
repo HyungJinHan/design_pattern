@@ -16,9 +16,7 @@
 
 ### 패턴 구조
 
-<div align="center">
-  <img src="../../image/iterator.png">
-</div>
+![iterator](../../image/iterator.png)
 
 - `Iterator` (반복자)
 

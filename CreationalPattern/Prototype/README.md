@@ -11,6 +11,4 @@
 
 ### 패턴 구조
 
-<div align="center">
-  <img src="../../image/prototype.png">
-</div>
+![prototype](../../image/prototype.png)

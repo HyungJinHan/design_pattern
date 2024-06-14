@@ -16,28 +16,18 @@
 
 ### 패턴 구조
 
-<div align="center">
-  <img src="../../image/factory_method_1.png">
-</div>
-
-<br/>
-  <details>
-    <summary>
-    예제 이미지
-    </summary>
-  <div align="center">
-    <img src="../../image/factory_method_2.png">
-  </div>
-  </details>
+![factory_method_1](../../image/factory_method_1.png)
 
 - `Product`(제품)의 역할
 
   - 생성된 제품(인스턴스)이 가지고 있어야 할 인터페이스(API)를 결정하는 추상 클래스
+
   - 구체적인 역할은 하위 클래스인 `ConcreteProduct`가 결정함
 
 - `Creator`(생산자)의 역할
 
   - `Product` 클래스를 생성하는 추상클래스
+
   - `Creator`는 실제 제품을 생성하는 일을 `ConcreteCreator`의 역할에 대해서 아무것도 모름
 
 - `ConcreteProduct`(구체적인 제품)의 역할
@@ -45,4 +35,5 @@
   - 구체적인 제품을 나타내는 클래스
 
 - `ConcreteCreator`(구체적인 생산자)의 역할
+
   - 구체적인 제품을 만드는 클래스

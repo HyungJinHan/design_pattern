@@ -18,9 +18,7 @@
 
 ### 패턴 구조
 
-<div align="center">
-  <img src="../../image/mediator.png">
-</div>
+![mediator](../../image/mediator.png)
 
 - 해당 형태의 다이어그램 만이 중재자 패턴인 것이 아닌, 해당 형태의 다이어그램이 대표적인 중재자 패턴인 것
 

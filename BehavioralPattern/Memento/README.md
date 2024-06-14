@@ -14,9 +14,7 @@
 
 ### 패턴 구조
 
-<div align="center">
-  <img src="../../image/memento.png">
-</div>
+![memento](../../image/memento.png)
 
 - `Originator`
 

@@ -13,9 +13,7 @@
 
 ### 패턴 구조
 
-<div align="center">
-  <img src="../../image/decorator.png">
-</div>
+![decorator](../../image/decorator.png)
 
 - `Component` (`Interface`)
 

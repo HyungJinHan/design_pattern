@@ -21,9 +21,7 @@
 
 ### 패턴 구조
 
-<div align="center">
-  <img src="../../image/facade.png">
-</div>
+![facade](../../image/facade.png)
 
 - `Facade`
 

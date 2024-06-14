@@ -18,6 +18,4 @@
 
 ### 패턴 구조
 
-<div align="center">
-  <img src="../../image/visitor.png">
-</div>
+![visitor](../../image/visitor.png)

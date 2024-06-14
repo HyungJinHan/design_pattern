@@ -16,6 +16,4 @@
 
 ### 패턴 구조
 
-<div align="center">
-  <img src="../../image/chain_of_responsibility.png">
-</div>
+![chain_of_responsibility](../../image/chain_of_responsibility.png)

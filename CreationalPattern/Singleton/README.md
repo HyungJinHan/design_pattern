@@ -13,6 +13,4 @@
 
 ### 패턴 구조
 
-<div align="center">
-  <img src="../../image/singleton.png">
-</div>
+![singleton](../../image/singleton.png)
