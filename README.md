@@ -47,3 +47,10 @@
 - [어댑터](./StructuralPattern/Adapter/README.md)
 - [브릿지](./StructuralPattern/Bridge/README.md)
 - [경량 (Flyweight)](./StructuralPattern/Flyweight/README.md)
+
+### 같이보기
+
+> 디자인 패턴 공부하다가 알게 된 것들
+
+- [객체 지향 설계의 5원칙 `S.O.L.I.D`](./) -> 추가 예정
+- [정렬 알고리즘](./NonePattern/SortingAlgorithm/) -> 추가 예정
