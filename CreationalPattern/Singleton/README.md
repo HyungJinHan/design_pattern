@@ -278,3 +278,109 @@
 ```
 
 </details>
+
+#### Double-Checked Locking
+
+> `volatile` 개념 이해를 위해 Java 코드로 예제 작성
+
+- 매번 `synchronized` 동기화를 실행하는 것이 문제라면, 최초 초기화할 때만 적용하고 이미 만들어진 인스턴스를 반환할 때는 사용하지 않도록 하는 기법
+
+- 이때 인스턴스 필드에 `volatile` 키워드를 붙여주어야 I/O 불일치 문제를 해결할 수 있음
+
+- 그러나 `volatile` 키워드를 사용하기 위한 조건으로 `JVM` 버전이 1.5 이상이어야 하며, `JVM`에 대한 심층적인 이해가 필요함
+
+  - <b><u>`JVM`에 따라서 여전히 스레드 세이프 하지 않는 경우가 발생하기 때문에 사용하기를 지양하는 편</u></b>
+
+> `volatile`
+>
+> `Java`에서는 스레드를 여러 개 사용할 경우, 성능을 위해서 각각의 스레드들은 변수를 메인 메모리(`RAM`)으로부터 가져오는 것이 아니라, 캐시(`Cache`) 메모리에서 가져오게 된다.
+>
+> 문제는 비동기로 변수 값을 개시에 저장하다가, 각 스레드마다 할당되어있는 캐시 메모리의 변수 값이 일치하지 않을 수 있다는 점이다.
+>
+> 그래서 `volatile` 키워드를 통해 이 변수는 캐시에서 읽지 말고 메인 메모리에서 읽어오도록 지정해주는 것이다.
+>
+> ![singleton_volatile](../../image/singleton_volatile.png)
+
+<details>
+  <summary>singleton_thread_safe/Main.java</summary>
+
+```JAVA
+  package singleton_double_checked_locking;
+
+  class SingletonDoubleCheckedLocking {
+    private static volatile SingletonDoubleCheckedLocking instance; // volatile 키워드 적용
+
+    private SingletonDoubleCheckedLocking() {}
+
+    public static SingletonDoubleCheckedLocking getInstance() {
+      if (instance == null) {
+        // 메서드에 동기화를 거는 것이 아닌, Singleton 클래스 자체에 동기화를 걸어둠
+        synchronized (SingletonDoubleCheckedLocking.class) {
+          if (instance == null) {
+            instance = new SingletonDoubleCheckedLocking();
+            // 최초 초기화만 동기화 작업이 일어나서 리소스 낭비를 최소화
+          }
+        }
+      }
+
+      return instance; // 최초 초기화가 되면 앞으로 생성된 인스턴스만 반환
+    }
+  }
+```
+
+</details>
+
+#### Bill Pugh Solution (LazyHolder)
+
+> 스레드 관련 내용이기 때문에 Java 코드로 예제 작성
+
+- 멀티 스레드 환경에서 안전하고 `Lazy Loading`(나중에 객체 생성)도 가능한 완벽한 싱글턴 기법
+
+- 클래스 안에 내부 클래스(`holder`)를 두어 `JVM`의 클래스 로더 매커니즘과 클래스가 로드되는 시점을 이용한 방법 (스레드 세이프함)
+
+- `static` 메소드에서는 `static` 멤버만을 호출할 수 있기 때문에 내부 클래스를 `static`으로 설정
+
+  - 이 밖에도 내부 클래스의 치명적인 문제점인 메모리 누수 문제를 해결하기 위해 내부 클래스를 `static`으로 설정
+
+- 다만, 클라이언트가 임의로 싱글턴을 파괴할 수 있다는 단점을 지님 (`Reflection API`, 직렬화/역직렬화를 통해)
+
+<details>
+  <summary>singleton_bill_pugh/Main.java</summary>
+
+```JAVA
+  package singleton_bill_pugh;
+
+  class SingletonBillPugh {
+    private SingletonBillPugh() {}
+
+    private static class SingleInstanceHolder {
+      private static final SingletonBillPugh INSTANCE = new SingletonBillPugh();
+    }
+
+    public static SingletonBillPugh getInstance() {
+      return SingleInstanceHolder.INSTANCE;
+    }
+  }
+```
+
+1. 내부 클래스를 `static`으로 선언했기 때문에 싱글턴 클래스가 초기화되어도 `SingleInstanceHolder` 내부 클래스는 메모리에 로드되지 않음
+
+2. 어떠한 모듈에서 `getInstance()` 메서드를 호출할 때, `SingleInstanceHolder` 내부 클래스의 `static` 멤버를 갖와 리턴하게 되는데, 이때 내부 클래스가 한 번만 초기화되면서 싱글턴 객체를 최초로 생성 및 리턴
+
+3. 마지막으로 `final`로 지정함으로서 다시 값이 할당되지 않도록 방지
+
+</details>
+
+#### Enum 사용
+
+- `enum`은 애초에 멤버를 만들 때, `private`로 만들고 한 번만 초기화하기 때문에 스레드 세이프함
+
+- `enum` 내에서 상수 뿐만 아니라, 변수나 메서드를 선언해 사용이 가능하기 때문에, 이를 이용해 싱글턴 클래스처럼 응용이 가능
+
+- 위의 [Bill Pugh Solution](#bill-pugh-solution-lazyholder) 기법과 달리, 클라이언트에서 `Reflection`을 통한 공격에도 안전
+
+- 단점으로는 아래와 같음
+
+  - 만일 싱글턴 클래스를 <b><u>일반적인 클래스로 마이그레이션을 해야할 때, 처음부터 코드를 다시 짜야함</u></b> (개발 스펙은 언제 어디서나 변경될 수 있기 때문)
+
+  - <b><u>클래스 상속이 필요할 때, `enum` 외의 클래스 상속은 불가능</u></b>
