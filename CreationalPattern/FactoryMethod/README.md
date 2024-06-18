@@ -37,3 +37,5 @@
 - `ConcreteCreator`(구체적인 생산자)의 역할
 
   - 구체적인 제품을 만드는 클래스
+
+> [Abstract Factory VS Factory Method](../AbstractVSFactoryMethod/README.md)

@@ -20,6 +20,8 @@
 - [빌더](./CreationalPattern/Builder/README.md)
 - [프로토타입](./CreationalPattern/Prototype/README.md)
 
+> [추상 팩토리 VS 팩토리 메소드](./CreationalPattern/AbstractVSFactoryMethod/README.md)
+
 ### 행동 패턴
 
 > 클래스와 객체들이 상호작용하는 방법과 역할을 분담하는 방법을 다루는 패턴

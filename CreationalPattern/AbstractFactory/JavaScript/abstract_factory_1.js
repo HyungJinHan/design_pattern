@@ -1,4 +1,4 @@
-const abstractCharacterFactory = (() => {
+const abstractFactory = (() => {
   let jobs = {};
   return {
     addJob: (job, Character) => {
@@ -60,4 +60,4 @@ const Runner = (() => {
   return Runner;
 })();
 
-module.exports = { abstractCharacterFactory, Emperor, Governor, Runner };
+module.exports = { abstractFactory, Emperor, Governor, Runner };
