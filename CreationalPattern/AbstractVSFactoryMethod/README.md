@@ -51,3 +51,28 @@
 ### 두 패턴 비교 예제
 
 - [버튼 만들기 예제](./ButtonExample/)
+
+#### 팩토리 메서드의 문제점
+
+- 팩토리 메서드로 구현한 코드는 실행 자체에는 문제가 없어 보이지만, 만일 기능을 확장할 필요가 있을 때 문제가 생김
+
+- 예를 들어 OS 종류 중 Linux를 추가한다면 각 메서드마다 존재하는 분기 로직을 일일히 수정해야 함
+
+  ```TS
+    switch (type.toLowerCase()) {
+      case "window":
+        button = new WindowButton();
+        break;
+      case "mac":
+        button = new MacButton();
+        break;
+      case "linux":
+        button = new MacButton();
+        break;
+      // ...
+      case "또 다른 OS":
+        button = new MacButton();
+        break;
+      // ...
+    }
+  ```
