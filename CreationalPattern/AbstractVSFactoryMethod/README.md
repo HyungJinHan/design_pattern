@@ -48,7 +48,7 @@
     </tr>
   </table>
 
-### 두 패턴 비교 예제
+### 두 패턴의 비교 예제
 
 - [버튼 만들기 예제](./ButtonExample/)
 
@@ -71,8 +71,163 @@
         break;
       // ...
       case "또 다른 OS":
-        button = new MacButton();
+        button = new OtherButton();
         break;
       // ...
     }
+
+    switch (type.toLowerCase()) {
+      case "window":
+        checkbox = new WindowCheckBox();
+        break;
+      case "mac":
+        checkbox = new MacCheckBox();
+        break;
+      // ...
+      case "또 다른 OS":
+        checkbox = new OtherCheckBox();
+        break;
+      // ...
+    }
+
+    switch (type.toLowerCase()) {
+      case "window":
+        textEdit = new WindowTextEdit();
+        break;
+      case "mac":
+        textEdit = new MacTextEdit();
+        break;
+      // ...
+      case "또 다른 OS":
+        textEdit = new OtherTextEdit();
+        break;
+      // ...
+    }
+
+    // ...
   ```
+
+#### 추상 팩토리의 유연한 확장
+
+- 예를 들어 Linux OS 환경이 추가된다고 하더라도, 기존의 코드 수정 없이 컴포넌트 구현체 클래스와 팩토리 클래스만 적절하게 추가만 해주면 확장됨
+
+  ```TS
+  /** Component.ts */
+    class LinuxFactory implements ComponentAbstractFactory {
+      createButton(): Button {
+        return new LinuxButton();
+      }
+
+      createCheck(): CheckBox {
+        return new LinuxCheckBox();
+      }
+
+      createTextEdit(): TextEdit {
+        return new LinuxTextEdit();
+      }
+    }
+
+    /** FactoryMethod.ts */
+    class LinuxButton extends Button {
+      /** @override */
+      public override render(): void {
+        console.log("리눅스 버튼 생성 완료");
+      }
+    }
+
+    class LinuxCheckBox extends CheckBox {
+      /** @override */
+      public override render(): void {
+        console.log("리눅스 체크 박스 생성 완료");
+      }
+    }
+
+    class LinuxTextEdit extends TextEdit {
+      /** @override */
+      public override render(): void {
+        console.log("리눅스 텍스트 박스 생성 완료");
+      }
+    }
+  ```
+
+#### 추상 팩토리의 문제점
+
+- 추상 팩토리 패턴이 모든 확장에 대해 유연하게 대처할 수 있다는 의미는 아님
+
+- 새로운 OS 환경이 아닌, 새로운 컴포넌트인 `TooltTip` 등을 추가한다면
+
+  ```TS
+    /** AbstractFactory.ts */
+    interface ComponentAbstractFactory {
+      createButton(): Button;
+      createCheck(): CheckBox;
+      createTextEdit(): TextEdit;
+      createToolTip(): ToolTip; // -> 툴팁 기능 추가
+    }
+
+    class WindowFactory implements ComponentAbstractFactory {
+      createButton(): Button {
+        return new WindowButton();
+      }
+
+      createCheck(): CheckBox {
+        return new WindowCheckBox();
+      }
+
+      createTextEdit(): TextEdit {
+        return new WindowTextEdit();
+      }
+
+       /** 툴팁 기능 추가 */
+      createToolTip(): ToolTip {
+        return new WindowToolTip();
+      }
+    }
+
+    class MacFactory implements ComponentAbstractFactory {
+      createButton(): Button {
+        return new MacButton();
+      }
+
+      createCheck(): CheckBox {
+        return new MacCheckBox();
+      }
+
+      /** 툴팁 기능 추가 */
+      createToolTip(): ToolTip {
+        return new MacToolTip();
+      }
+    }
+
+    /** Component.ts */
+    abstract class Button implements Component {
+      render(): void {
+        throw new Error("Method not implemented.");
+      }
+    }
+
+    abstract class CheckBox implements Component {
+      render(): void {
+        throw new Error("Method not implemented");
+      }
+    }
+
+    abstract class TextEdit implements Component {
+      render(): void {
+        throw new Error("Method not implemented");
+      }
+    }
+
+    /** 툴팁 기능 추가 */
+    abstract class Tooltip implements Component {
+      render(): void {
+        throw new Error("Method not implemented");
+      }
+    }
+  ```
+
+#### 결론
+
+- 두 패턴은 엄연히 별개의 코드 패턴이며, 두 패턴 중 어느 패턴이 우월한지를 정하는 것은 틀린 것
+
+  - 사용처에 따라 코드 패턴을 적절히 선택하여 코드를 작성하는 것이 좋음
