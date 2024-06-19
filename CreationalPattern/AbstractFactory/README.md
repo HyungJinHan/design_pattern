@@ -39,3 +39,9 @@
   - 추상화된 인터페이스만을 이용하여 제품을 받기 때문에 구체적인 제품, 공장에 대해서는 모름 (사용만 할 줄 알고 원리는 모름)
 
 > [Abstract Factory VS Factory Method](../AbstractVSFactoryMethod/README.md)
+
+### 패턴 예제 (버튼 만들기)
+
+![abstract_factory_example](../../image/abstract_factory_example.png)
+
+- [예제 코드 보러가기](../AbstractVSFactoryMethod/ButtonExample/)

@@ -26,7 +26,7 @@
 
 - `Creator`(생산자)의 역할
 
-  - `Product` 클래스를 생성하는 추상클래스
+  - `Product` 클래스를 생성하는 추상 클래스
 
   - `Creator`는 실제 제품을 생성하는 일을 `ConcreteCreator`의 역할에 대해서 아무것도 모름
 
@@ -39,3 +39,7 @@
   - 구체적인 제품을 만드는 클래스
 
 > [Abstract Factory VS Factory Method](../AbstractVSFactoryMethod/README.md)
+
+### 패턴 예제 (버튼 만들기)
+
+- [예제 코드 보러가기](../AbstractVSFactoryMethod/ButtonExample/)

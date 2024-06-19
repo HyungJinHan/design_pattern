@@ -47,3 +47,7 @@
       <td>클래스(Factory) 레벨에서 포커스를 맞춤으로써, 클라이언트의 ConcreteProduct 인스턴스 군의 생성 및 구성에 대한 의존을 감소</td>
     </tr>
   </table>
+
+### 두 패턴 비교 예제
+
+- [버튼 만들기 예제](./ButtonExample/)
