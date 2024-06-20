@@ -18,25 +18,35 @@
 
 ![factory_method_1](../../image/factory_method_1.png)
 
-- `Product`(제품)의 역할
+- `Creator`
 
-  - 생성된 제품(인스턴스)이 가지고 있어야 할 인터페이스(API)를 결정하는 추상 클래스
-
-  - 구체적인 역할은 하위 클래스인 `ConcreteProduct`가 결정함
-
-- `Creator`(생산자)의 역할
+  - 최상위 공장 클래스로서, 팩토리 메서드를 추상화하여 서브 클래스로 하여금 구현하도록 함
 
   - `Product` 클래스를 생성하는 추상 클래스
 
   - `Creator`는 실제 제품을 생성하는 일을 `ConcreteCreator`의 역할에 대해서 아무것도 모름
 
-- `ConcreteProduct`(구체적인 제품)의 역할
-
-  - 구체적인 제품을 나타내는 클래스
-
-- `ConcreteCreator`(구체적인 생산자)의 역할
+- `ConcreteCreator`
 
   - 구체적인 제품을 만드는 클래스
+
+  - 각 서브 공장 클래스들은 이에 맞는 제품 객체를 반환하도록 생성, 추상 메소드를 재정의함
+
+    - 즉, 제품 객체 하나 당, 그에 걸맞는 생산 공장 객체가 위치됨
+
+- `Product`
+
+  - 제품 구현체를 추상화
+
+  - 생성된 제품(인스턴스)이 가지고 있어야 할 인터페이스(API)를 결정하는 추상 클래스
+
+  - 구체적인 역할은 하위 클래스인 `ConcreteProduct`가 결정함
+
+- `ConcreteProduct`
+
+  - 제품 구현체
+
+  - 구체적인 제품을 나타내는 클래스
 
 > [Abstract Factory VS Factory Method](../AbstractVSFactoryMethod/README.md)
 
