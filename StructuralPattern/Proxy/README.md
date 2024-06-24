@@ -2,6 +2,8 @@
 
 ## Proxy Pattern
 
+![proxy](../../image/refactoring-guru/proxy.png)
+
 ### 개념
 
 - 대상 원본 객체를 대리하여 대신 처리하게 함으로써 로직의 흐름을 제어하는 패턴
@@ -42,7 +44,7 @@
 
 ### 패턴 구조
 
-![proxy](../../image/proxy.png)
+![proxy](../../image/structure/proxy.png)
 
 - `Subject`
 
@@ -294,7 +296,7 @@
 
 > 프록시를 스터드라고도 부르며, 프록시로부터 전달된 명령을 이해하고 적합한 메소드를 호출해주는 역할을 하는 보조객체를 스켈레톤이라고 함
 
-![proxy_remote](../../image/proxy_remote.png)
+![proxy_remote](../../image/example/proxy_remote.png)
 
 #### 캐싱 프록시 (`Caching Proxy`)
 
@@ -312,4 +314,4 @@
 
   이를 패턴으로 따져보면, 웹 브라우저가 `Client` 역할, `HTTP Proxy`가 `Proxy` 역할, 그리고 웹 서버가 `RealSubject` 역할을 한다고 보면 된다.
 
-  ![proxy_caching](../../image/proxy_caching.png)
+  ![proxy_caching](../../image/example/proxy_caching.png)

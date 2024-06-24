@@ -22,7 +22,7 @@
 
 ### 패턴 구조
 
-![interpreter](../../image/interpreter.png)
+![interpreter](../../image/structure/interpreter.png)
 
 - `interpret`
 

@@ -2,9 +2,11 @@
 
 ## Adapter Pattern
 
+![adapter](../../image/refactoring-guru/adapter.png)
+
 ### 개념
 
-<img src="../../image/adapter_example.png" width="50%"/>
+<img src="../../image/example/adapter_example.png" width="50%"/>
 
 > 위의 사진을 통해 개념을 정리할 수 있음
 
@@ -34,7 +36,7 @@
 
 - `Adaptee(Service)` 객체를 필드 변수로 저장해야 하기 때문에 공간 차지 비용이 듦
 
-![adapter_object](../../image/adapter_object.png)
+![adapter_object](../../image/structure/adapter_object.png)
 
 - `Adaptee(Service)`
 
@@ -124,7 +126,7 @@
 
   - JavaScript도 마찬가지로 다중 상속이 불가능하지만, 믹스인(Mixins) 방식을 통한 클래스 정의로 다중 상속이 가능
 
-![adapter_class](../../image/adapter_class.png)
+![adapter_class](../../image/structure/adapter_class.png)
 
 - `Adaptee(Service)`
 

@@ -2,6 +2,8 @@
 
 ## Mediator Pattern
 
+![mediator](../../image/refactoring-guru/mediator.png)
+
 ### 개념
 
 - 여러 객체 간의 의사소통하는 방법을 추상화
@@ -18,7 +20,7 @@
 
 ### 패턴 구조
 
-![mediator](../../image/mediator.png)
+![mediator](../../image/structure/mediator.png)
 
 - 해당 형태의 다이어그램 만이 중재자 패턴인 것이 아닌, 해당 형태의 다이어그램이 대표적인 중재자 패턴인 것
 

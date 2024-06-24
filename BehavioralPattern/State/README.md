@@ -2,6 +2,8 @@
 
 ## State Pattern
 
+![state](../../image/refactoring-guru/state.png)
+
 ### 개념
 
 > 상태란? 객체가 가질 수 있는 어떤 조건이나 상황을 의미
@@ -15,7 +17,7 @@
 
 ### 패턴 구조
 
-![state](../../image/state.png)
+![state](../../image/structure/state.png)
 
 - `State` 인터페이스
 

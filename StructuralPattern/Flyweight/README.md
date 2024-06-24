@@ -1,6 +1,8 @@
 ### [↩︎ Main으로 돌아가기](../../README.md)
 
-## Bridge Pattern
+## Flyweight Pattern
+
+![flyweight](../../image/refactoring-guru/flyweight.png)
 
 ### 개념
 
@@ -26,13 +28,11 @@
   >
   >   - 그래서 값이 언제 어디서 변화할지 모르기 때문에 이를 캐시해서 공유할 수 없음
 
-![flyweight](../../image/flyweight_example.png)
-
 - 객체를 일일히 생성한 것과 객체를 공유 상태로 만든 것에 대한 메모리 무게 차이
 
 ### 패턴 구조
 
-![flyweight](../../image/flyweight.png)
+![flyweight](../../image/structure/flyweight.png)
 
 - `Flyweight`
 

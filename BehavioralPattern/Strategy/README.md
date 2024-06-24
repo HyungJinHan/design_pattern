@@ -2,6 +2,8 @@
 
 ## Strategy Pattern
 
+![strategy](../../image/refactoring-guru/strategy.png)
+
 ### 개념
 
 - 실행(런타일) 중에 알고리즘 전략을 선택하여 객체 동작을 실시간으로 바뀌도록 할 수 있게 하는 행위 디자인 패턴
@@ -11,7 +13,7 @@
 
 ### 패턴 구조
 
-![strategy](../../image/strategy.png)
+![strategy](../../image/structure/strategy.png)
 
 - 전략 알고리즘 객체들
 

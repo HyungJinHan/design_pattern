@@ -2,6 +2,8 @@
 
 ## Abstract Factory Pattern
 
+![abstract_factory](../../image/refactoring-guru/abstract-factory.png)
+
 ### 개념
 
 - 연관성있는 객체 군이 여러개 있을 경우 이들을 묶어 추상화하고, 어떤 구체적인 상황이 주어지면 팩토리 객체에서 집합으로 묶은 객체 군을 구현화하는 생성 패턴
@@ -12,7 +14,7 @@
 
 ### 패턴 구조
 
-![abstract_factory](../../image/abstract_factory.png)
+![abstract_factory](../../image/structure/abstract_factory.png)
 
 - `AbstractFactory`
 
@@ -42,6 +44,6 @@
 
 ### 패턴 예제 (버튼 만들기)
 
-![abstract_factory_example](../../image/abstract_factory_example.png)
+![abstract_factory_example](../../image/example/abstract_factory_example.png)
 
 - [예제 코드 보러가기](../AbstractVSFactoryMethod/ButtonExample/)

@@ -2,6 +2,8 @@
 
 ## Visitor Pattern
 
+![visitor](../../image/refactoring-guru/visitor.png)
+
 ### 개념
 
 - 비지터 패턴이란 계층을 가진 클래스들에서 특정 알고리즘을 캡슐화하고 싶을 때 사용
@@ -18,4 +20,4 @@
 
 ### 패턴 구조
 
-![visitor](../../image/visitor.png)
+![visitor](../../image/structure/visitor.png)

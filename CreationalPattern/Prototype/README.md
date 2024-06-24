@@ -2,6 +2,8 @@
 
 ## Prototype Pattern
 
+![prototype](../../image/refactoring-guru/prototype.png)
+
 ### 개념
 
 - 실제 제품을 만들기에 앞서 테스트를 위한 샘플 제품을 만드는데 이때, 샘플 제품을 프로토타입이라고 함
@@ -11,4 +13,4 @@
 
 ### 패턴 구조
 
-![prototype](../../image/prototype.png)
+![prototype](../../image/structure/prototype.png)

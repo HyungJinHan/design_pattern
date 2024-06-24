@@ -2,6 +2,8 @@
 
 ## Composite Pattern
 
+![composite](../../image/refactoring-guru/composite.png)
+
 ### 개념
 
 - 복합 객체(`Composite`)와 단일 객체(`Leaf`)를 동일한 컴포넌트로 취급하여, 클라이언트에게 이 둘을 구분하지 않고 동일한 인터페이스를 사용하도록 하는 구조 패턴
@@ -14,7 +16,7 @@
 
   - 디렉토리 개념의 예시 이미지
 
-    ![composite_example](../../image/composite_example.png)
+    ![composite_example](../../image/example/composite_example.png)
 
     - 폴더(디렉토리) 안에는 파일이 들어있을 수도 있고, 파일을 담은 또 다른 폴더도 들어있을 수 있음
 
@@ -26,7 +28,7 @@
 
 ### 패턴 구조
 
-![composite](../../image/composite.png)
+![composite](../../image/structure/composite.png)
 
 - `Component`
 

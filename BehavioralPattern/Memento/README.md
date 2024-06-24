@@ -2,6 +2,8 @@
 
 ## Memento Pattern
 
+![memento](../../image/refactoring-guru/memento.png)
+
 ### 배포된 예제 사이트
 
 - [memento-example 사이트](https://memento-example.vercel.app/)
@@ -14,7 +16,7 @@
 
 ### 패턴 구조
 
-![memento](../../image/memento.png)
+![memento](../../image/structure/memento.png)
 
 - `Originator`
 

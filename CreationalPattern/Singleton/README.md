@@ -2,6 +2,8 @@
 
 ## Singleton Pattern
 
+![singleton](../../image/refactoring-guru/singleton.png)
+
 ### 개념
 
 - <b><u>단 하나의 유일한 객체를 만들기 위한</u></b> 코드 패턴
@@ -30,7 +32,7 @@
 
 ### 패턴 구조
 
-![singleton](../../image/singleton.png)
+![singleton](../../image/structure/singleton.png)
 
 - 싱글턴으로 이용할 클래스를 외부에서 마구잡이로 `new` 생성자를 통해 인스턴스와하는 것을 제한하기 위해 <b><u>클래스 생성자 메서드에 `private` 키워드를 붙여주면 됨</u></b>
 
@@ -247,7 +249,7 @@
 >
 > - 한 마디로 스레드가 해당 메서드를 실행하는 동안 다른 스레드가 접근하지 못하도록 잠금(lock)을 거는 것으로 보면 됨
 >
-> ![singleton_synchrinized](../../image/singleton_synchrinized.png)
+> ![singleton_synchrinized](../../image/example/singleton_synchrinized.png)
 >
 > 1. `thread-1`이 메서드에 진입하는 순간
 >
@@ -299,7 +301,7 @@
 >
 > 그래서 `volatile` 키워드를 통해 이 변수는 캐시에서 읽지 말고 메인 메모리에서 읽어오도록 지정해주는 것이다.
 >
-> ![singleton_volatile](../../image/singleton_volatile.png)
+> ![singleton_volatile](../../image/example/singleton_volatile.png)
 
 <details>
   <summary>singleton_thread_safe/Main.java</summary>

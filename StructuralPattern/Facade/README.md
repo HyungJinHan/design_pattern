@@ -2,6 +2,8 @@
 
 ## Facade Pattern
 
+![facade](../../image/refactoring-guru/facade.png)
+
 ### 개념
 
 - 사용하기 복잡한 클래스 라이브러리에 대해 사용하기 편하게 간편한 인터페이스(`API`)를 구성하기 위한 구조 패턴
@@ -12,7 +14,7 @@
   이러한 거대한 솔루션을 구성하려면 상호 관련된 많은 클래스들을 적절히 제어해야 할 필요성이 있으며,
   이때 이 처리를 개별적으로 제어하는 것이 아닌 일종의 '창구'를 준비하여 중계할 수 있도록 구성하는 과정
 
-  ![facade_exmaple](../../image/facade_exmaple.png)
+  ![facade_exmaple](../../image/example/facade_exmaple.png)
 
   고객은 복잡한 절차 지식없이 고객센터(창구)에 요구만 하면 결과를 얻음
 
@@ -21,7 +23,7 @@
 
 ### 패턴 구조
 
-![facade](../../image/facade.png)
+![facade](../../image/structure/facade.png)
 
 - `Facade`
 

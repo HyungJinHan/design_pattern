@@ -2,6 +2,8 @@
 
 ## Observer Pattern
 
+![observer](../../image/refactoring-guru/observer.png)
+
 ### 개념
 
 - 어떤 이벤트가 일어나는 것을 감시하는 패턴을 의미
@@ -12,4 +14,4 @@
 
 ### 패턴 구조
 
-![observer](../../image/observer.png)
+![observer](../../image/structure/observer.png)

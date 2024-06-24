@@ -2,6 +2,8 @@
 
 ## Factory Method Pattern
 
+![factory_method_1](../../image/refactoring-guru/factory-method.png)
+
 ### 개념
 
 - 인스턴스 생성을 하위 클래스에 위임
@@ -16,7 +18,7 @@
 
 ### 패턴 구조
 
-![factory_method_1](../../image/factory_method_1.png)
+![factory_method_1](../../image/structure/factory_method_1.png)
 
 - `Creator`
 

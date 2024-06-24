@@ -2,6 +2,8 @@
 
 ## Iterator Pattern
 
+![iterator](../../image/refactoring-guru/iterator.png)
+
 ### 개념
 
 - 일련의 데이터 집합에 대하여 순차적인 접근(순회)를 지원하는 패턴
@@ -16,7 +18,7 @@
 
 ### 패턴 구조
 
-![iterator](../../image/iterator.png)
+![iterator](../../image/structure/iterator.png)
 
 - `Iterator` (반복자)
 

@@ -2,6 +2,8 @@
 
 ## Builder Pattern
 
+![builder_example](../../image/refactoring-guru/builder.png)
+
 ### 개념
 
 - 복잡한 객체의 생성 과정과 표현 방법을 분리하여 다양한 구성의 인스턴스를 만드는 생성 패턴
@@ -10,8 +12,8 @@
 
 - 예를 들면 수제 햄버거와 같은 느낌
 
-  ![builder_example](../../image/builder_example.png)
+  ![builder_example](../../image/example/builder_example.png)
 
 ### 패턴 구조
 
-![builder](../../image/builder.png)
+![builder](../../image/structure/builder.png)

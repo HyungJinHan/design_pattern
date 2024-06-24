@@ -2,13 +2,15 @@
 
 ## Bridge Pattern
 
+![bridge](../../image/refactoring-guru/bridge.png)
+
 ### 개념
 
 > 간단하게 실제 다리를 생각하면 됨 (기능 클래스 계층 ||===== Bridge =====|| 구현 클래스 계층)
 >
 > 강에 다리를 놓음으로써 강 양쪽의 두 장소를 연결하는 것과 같이 기능 클래스 계층과 구현 클래스 계층을 잇는 다리의 역할을 하는 패턴
 >
-> <img src='../../image/bridge_example.jpeg' width='50%' />
+> <img src='../../image/example/bridge_example.jpeg' width='50%' />
 >
 > - feat. Tower Bridge (London)
 
@@ -30,7 +32,7 @@
 
 ### 패턴 구조
 
-![composite_example](../../image/bridge.png)
+![composite_example](../../image/structure/bridge.png)
 
 - `Abstraction`
 

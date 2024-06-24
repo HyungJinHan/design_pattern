@@ -2,6 +2,8 @@
 
 ## Chain of Responsibility Pattern
 
+![chain-of-responsibility](../../image/refactoring-guru/chain-of-responsibility.png)
+
 ### 개념
 
 - 객체들이 연결된 체인 형태로 존재하며, 각 객체가 요청을 처리하지 못할 경우, 다음 객체에게 책임을 전달하고, 다음 객체 또한 처리하지 못하면 다시 다음 객체로 전달하는 패턴
@@ -16,4 +18,4 @@
 
 ### 패턴 구조
 
-![chain_of_responsibility](../../image/chain_of_responsibility.png)
+![chain_of_responsibility](../../image/structure/chain_of_responsibility.png)

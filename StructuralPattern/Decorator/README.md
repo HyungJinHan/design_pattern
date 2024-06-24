@@ -2,6 +2,8 @@
 
 ## Decorator Pattern
 
+![decorator](../../image/refactoring-guru/decorator.png)
+
 ### 개념
 
 - 대상 객체에 대한 기능 확장이나 변경이 필요할 때, 객체의 결합을 통해 서브클래싱 대신 쓸 수 있는 유연한 대안 구조 패턴
@@ -13,7 +15,7 @@
 
 ### 패턴 구조
 
-![decorator](../../image/decorator.png)
+![decorator](../../image/structure/decorator.png)
 
 - `Component` (`Interface`)
 
