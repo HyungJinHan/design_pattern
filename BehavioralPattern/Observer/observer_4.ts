@@ -32,8 +32,9 @@ class WeatherAPI implements ISubject {
 
   // 이벤트 전파
   public notifyObservers(): void {
+    // JAVA -> for(Observer o: subscribers) {
     for (let o of this.subscribers) {
-      o.display(this);
+      o.display(this); // 자신의 객체를 매개변수로 줘서 현재 자신의 상태를 구독자에게 알림
     }
   }
 }
