@@ -50,6 +50,7 @@
       <li style="list-style: none;">Proxy</li>
     </td>
     <td>
+      <li style="list-style: none;">Chain of Responsibility</li>
       <li style="list-style: none;">Command</li>
       <li style="list-style: none;">Mediator</li>
       <li style="list-style: none;">Memento</li>
