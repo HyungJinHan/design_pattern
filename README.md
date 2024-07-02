@@ -34,7 +34,7 @@
 - [전략 (Strategy)](./BehavioralPattern/Strategy/README.md)
 - [인터프리터](./BehavioralPattern/Interpreter/README.md)
 - [책임 연쇄 (Chain of Responsibility)](./BehavioralPattern/ChainOfResponsibility/README.md)
-- [비지터 (Visitor)](./BehavioralPattern/Visitor/README.md)
+- [방문자 (Visitor)](./BehavioralPattern/Visitor/README.md)
 - [중재자 (Mediator)](./BehavioralPattern/Mediator/README.md)
 - [메멘토](./BehavioralPattern/Memento/README.md) -> 예제 사이트 有
 - [커맨드](./) -> 추가 예정

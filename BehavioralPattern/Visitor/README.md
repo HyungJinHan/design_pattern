@@ -21,3 +21,25 @@
 ### 패턴 구조
 
 ![visitor](../../image/structure/visitor.png)
+
+- `Visitor`
+
+  - 데이터 구조 내 각각의 구체적인 요소에 `visit` 메소드를 선언
+
+- `ConcreteVisitor`
+
+  - `Visitor` 인터페이스를 구현하고, `ConcreteElement` 역할을 처리
+
+- `Element`
+
+  - `Visitor` 역할이 방문할 곳을 나타내는 역할을 함
+
+  - 방문자를 받아들이는 `element` 메소드를 선언
+
+- `ConcreteElement`
+
+  - `Element` 인터페이스를 구현하는 역할
+
+- `ObjectStructure`
+
+  - `Elememt` 역할의 집합을 취급하는 역할
