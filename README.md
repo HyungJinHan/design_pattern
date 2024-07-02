@@ -37,7 +37,7 @@
 - [방문자 (Visitor)](./BehavioralPattern/Visitor/README.md)
 - [중재자 (Mediator)](./BehavioralPattern/Mediator/README.md)
 - [메멘토](./BehavioralPattern/Memento/README.md) -> 예제 사이트 有
-- [커맨드](./) -> 추가 예정
+- [커맨드](./BehavioralPattern/Command/README.md)
 
 ### 구조 패턴
 
