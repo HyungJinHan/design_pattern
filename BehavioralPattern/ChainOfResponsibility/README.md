@@ -19,3 +19,21 @@
 ### 패턴 구조
 
 ![chain_of_responsibility](../../image/structure/chain_of_responsibility.png)
+
+- `Handler`
+
+  - 요청을 수신하고 처리 객체들의 집합을 정의하는 인터페이스
+
+- `ConcreteHandler`
+
+  - 요청을 처리하는 실제 처리 객체
+
+  - 핸들러에 대한 필드를 내부에 가지고 있으며, 메서드를 통해 다음 핸들러를 체인시키고 다음 체인의 핸들러를 바라봄
+
+  - 자신이 처리할 수 없는 요구가 나오면, 바라보고 있는 다음 체인의 핸들러에게 요청을 떠넘김
+
+  - `ConcreteHandler_1` - `ConcreteHandler_2` - `ConcreteHandler_3` - ... 이와 같은 방식으로 체인 형식이 구성됨
+
+- `Client`
+
+  - 요청을 핸들러에게 전달
