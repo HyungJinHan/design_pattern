@@ -10,15 +10,9 @@
 
 ## 디자인 패턴 용도에 따른 구분
 
-<p style="margin-left: 40px; font-size: 18px">목적(Purpose)에 따른 구분 →</p>
-
-<div style="display: flex; justify-content: space-around; width: 100%">
-
-<p style="transform: rotate(90deg); font-size: 18px; white-space: nowrap; position: absolute; left: 0%; padding-top: 120px; padding-left: 60px">범위(Scope)에 따른 구분 →</p>
-
-<table style="margin-left: 40px">
+<table>
   <tr>
-    <th scope="col" style='text-align: center;'></th>
+    <th scope="col" style='text-align: center;'>구분</th>
     <th scope="col" style='text-align: center;'>생성 패턴</th>
     <th scope="col" style='text-align: center;'>구조 패턴</th>
     <th scope="col" style='text-align: center;'>행위 패턴</th>
@@ -67,8 +61,6 @@
     </td>
   </tr>
 </table>
-
-</div>
 
 ### 1. 생성 패턴
 
