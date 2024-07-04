@@ -22,7 +22,7 @@ class Folder implements Node {
 
     for (const node of this.list) {
       // Folder 일 경우 재귀 동작
-      node.print(str + "    "); // 인자로 공백문자를 할당하여 indent 처리
+      node.print(str + "   "); // 인자로 공백문자를 할당하여 indent 처리
     }
   }
 

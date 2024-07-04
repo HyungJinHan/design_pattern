@@ -30,10 +30,10 @@ class Client {
 }
 
 Client.main();
-//  📂 root (40KB)
-//      📂 sub_1 (20KB)
-//          📄 file_1_1 (10KB)
-//          📄 file_1_2 (10KB)
-//      📄 file_1 (10KB)
-//      📂 sub_2 (10KB)
-//          📄 file_2_1 (10KB)
+// 📂 root (40KB)
+//    📂 sub_1 (20KB)
+//       📄 file_1_1 (10KB)
+//       📄 file_1_2 (10KB)
+//    📄 file_1 (10KB)
+//    📂 sub_2 (10KB)
+//       📄 file_2_1 (10KB)
