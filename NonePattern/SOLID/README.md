@@ -44,7 +44,7 @@
 
 ### 단일 책임 원칙 - `SRP (Single Responsibility Principle)`
 
-<div style="display: flex; flex-direction: row; width: 50%">
+<div style="display: flex; flex-direction: row; width: 50%;">
   <img src="../../image/SOLID/srp_1.png"/>
   <img src="../../image/SOLID/srp_2.png"/>
 </div>
