@@ -11,7 +11,6 @@ class File implements Node {
   }
 
   public print(str: string): void {
-    // console.log(str + "\uD83D\uDCDC" + this.name + " (" + this.size + "kb)");
     console.log(`${str} 📄 ${this.name} (${this.size}KB)`);
   }
 

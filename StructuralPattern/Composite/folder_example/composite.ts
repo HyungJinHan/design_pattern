@@ -15,13 +15,9 @@ class Folder implements Node {
     this.list.push(node);
   }
 
-  // 공백 indent 표현 처리를 위한 print 메서드 오버로딩
-  // public print(): void;
-
   public print(str: string): void {
     const size = this.getSize(); // 폴더가 담고 있는 모든 파일에 대한 용량 합산
 
-    // console.log(str + "\uD83D\uDCC2" + this.name + " (" + size + "kb)");
     console.log(`${str} 📂 ${this.name} (${size}KB)`);
 
     for (const node of this.list) {
