@@ -107,5 +107,5 @@
 
 > 디자인 패턴 공부하다가 알게 된 것들
 
-- [객체 지향 설계의 5원칙 `S.O.L.I.D`](./) → 추가 예정
+- [객체 지향 설계의 5원칙 `S.O.L.I.D`](./NonePattern/SOLID/README.md) -> ⚠️ 추가 중
 - [정렬 알고리즘](./NonePattern/SortingAlgorithm/) → 추가 예정
