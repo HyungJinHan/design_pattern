@@ -44,9 +44,9 @@
 
 ### 단일 책임 원칙 - `SRP (Single Responsibility Principle)`
 
-<div style="display: flex; flex-direction: row; width: 50%;">
-  <img src="../../image/SOLID/srp_1.png" style="width: 80%;"/>
-  <img src="../../image/SOLID/srp_2.png" style="width: 80%;"/>
+<div style="display: flex; flex-direction: row; width: 100%;">
+  <img src="../../image/SOLID/srp_1.png" style="width: 50%;"/>
+  <img src="../../image/SOLID/srp_2.png" style="width: 50%;"/>
 </div>
 
 > 정리하자면, 용도에 맞는 단 하나의 책임만을 가져야 한다는 원칙
