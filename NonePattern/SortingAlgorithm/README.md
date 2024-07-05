@@ -8,7 +8,7 @@
 
 ### 교환 정렬 ⭐️
 
-- [버블 정렬 `bubble_sort.ts`](./ExchangeSort/bubble_sort.ts)
+- [버블 정렬 `📄 bubble_sort.ts`](./ExchangeSort/bubble_sort.ts)
 
   | 복잡도          | 수학식                       |
   | --------------- | ---------------------------- |
@@ -25,7 +25,7 @@
 
   </details>
 
-- [칵테일(양방향 거품) 정렬](./ExchangeSort/shaker_sort.ts)
+- [칵테일(양방향 거품) 정렬 `📄 shaker_sort.ts`](./ExchangeSort/shaker_sort.ts)
 
   | 복잡도          | 수학식   |
   | --------------- | -------- |
