@@ -11,8 +11,7 @@ class bubbleSort {
           arr[j] = temp;
         }
       }
-      console.log(`${i}회`);
-      console.log(arr.toString());
+      console.log(arr.toString(), `→ [${i}회]`);
     }
   }
 }
