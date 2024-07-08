@@ -2,8 +2,8 @@ import { arr } from "../number_array";
 
 class oddEvenSort {
   public static main(arr: number[]): void {
-    let sorted = false;
-    let i: number = 0;
+    let sorted = false,
+      count: number = 0;
 
     const swap = (arr: number[], i: number, j: number): void => {
       let temp: number = arr[i];
@@ -26,8 +26,9 @@ class oddEvenSort {
           sorted = false;
         }
       }
-      i++;
-      console.log(arr.toString(), `→ [${i}회]`);
+
+      count++;
+      console.log(arr.toString(), `→ [${count}회]`);
     }
     // console.log(arr.toString());
   }

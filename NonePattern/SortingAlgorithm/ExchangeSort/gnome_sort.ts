@@ -2,8 +2,8 @@ import { arr } from "../number_array";
 
 class gnomeSort {
   public static main(arr: number[]): void {
-    let pos: number = 0;
-    let i: number = 0;
+    let pos: number = 0,
+      count: number = 0;
 
     const swap = (arr: number[], i: number, j: number): void => {
       let temp: number = arr[i];
@@ -20,8 +20,8 @@ class gnomeSort {
       swap(arr, pos, pos + 1);
       pos--;
 
-      i++;
-      console.log(arr.toString(), `→ [${i}회]`);
+      count++;
+      console.log(arr.toString(), `→ [${count}회]`);
     }
     // console.log(arr.toString());
   }

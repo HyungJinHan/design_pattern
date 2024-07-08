@@ -2,10 +2,12 @@ import { arr } from "../number_array";
 
 class combSort {
   public static main(arr: number[]): void {
-    let sorted: boolean = true;
-    let i: number, gap: number, size: number;
-    let count: number = 0,
-      temp: number = 0;
+    let i: number,
+      gap: number,
+      size: number,
+      count: number = 0,
+      temp: number = 0,
+      sorted: boolean = true;
 
     gap = size = arr.length;
 
