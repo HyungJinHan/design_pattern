@@ -65,8 +65,6 @@
 
   </details>
 
-<!-- - [느린 정렬](./) → 추가 예정 -->
-
 - [꼭두각시 정렬 `📄 stooge_sort.ts`](./ExchangeSort/stooge_sort.ts) -> 진짜 엄청나게 비효율적
 
   <details>
