@@ -1,4 +1,4 @@
-### [↩︎ Main으로 돌아가기](../../README.md)
+### [🏠 Main으로 돌아가기](../../README.md)
 
 ## Mediator Pattern
 
